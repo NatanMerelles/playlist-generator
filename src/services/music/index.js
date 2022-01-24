@@ -6,10 +6,11 @@ class MusicService {
   }
 
   async like({ musicId, age }) {
-    if (age < 18) {
+    const music = await this.getMusicById(musicId);
+
+    if (age < 18 && music.explicit) {
       throw new Error('User is under age');
     }
-    const music = await this.getMusicById(musicId);
 
     return music.likes + 1;
   }

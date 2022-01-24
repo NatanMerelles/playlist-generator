@@ -33,14 +33,21 @@ describe('MusicService Suite Testes', () => {
     sandbox.restore()
   })
 
-  it('should give error message case under age', async () => {
+  it('should give error message case under age', () => {
     const age = 16;
+    const music = Object.create(mocks.music);
+    music.explicit = true;
 
-    expect(musicService.like({ age })).to.be.rejectedWith(Error);
+    sandbox.stub(
+      musicService,
+      musicService.getMusicById.name
+    ).returns(music);
+
+    return expect(musicService.like({ age })).to.be.rejected;
   });
 
   it('should increase music likes amount', async () => {
-    const age = 18;
+    const age = 21;
     const music = Object.create(mocks.music);
     const expected = music.likes + 1;
 
@@ -51,6 +58,6 @@ describe('MusicService Suite Testes', () => {
 
     const result = await musicService.like({ age });
 
-    expect(result).to.be.equal(expected);
+    return expect(result).to.be.equal(expected);
   });
 });
