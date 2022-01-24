@@ -1,0 +1,56 @@
+const { describe, it, before, beforeEach, afterEach } = require('mocha');
+const chai = require('chai');
+const chaiAsPromised = require('chai-as-promised')
+chai.use(chaiAsPromised);
+const expect = chai.expect;
+
+const sinon = require('sinon');
+const { join } = require('path');
+
+const MusicService = require('../../../src/services/music');
+
+const musicDatabase = join(__dirname, '../../../database', "musics.json");
+
+const mocks = {
+  music: require('./../../mocks/validMusic.json')
+}
+
+describe('MusicService Suite Testes', () => {
+  let musicService = {}
+  let sandbox = {}
+
+  before(() => {
+    musicService = new MusicService({
+      musics: musicDatabase
+    })
+  })
+
+  beforeEach(() => {
+    sandbox = sinon.createSandbox()
+  })
+
+  afterEach(() => {
+    sandbox.restore()
+  })
+
+  it('should give error message case under age', async () => {
+    const age = 16;
+
+    expect(musicService.like({ age })).to.be.rejectedWith(Error);
+  });
+
+  it('should increase music likes amount', async () => {
+    const age = 18;
+    const music = Object.create(mocks.music);
+    const expected = music.likes + 1;
+
+    sandbox.stub(
+      musicService,
+      musicService.getMusicById.name
+    ).returns(music);
+
+    const result = await musicService.like({ age });
+
+    expect(result).to.be.equal(expected);
+  });
+});

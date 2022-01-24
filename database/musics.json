@@ -1,0 +1,90 @@
+[
+  {
+    "id":"3e9d64eb-7db6-45f2-bea1-3057a42c0b93",
+    "name":"aut voluptatem explicabo",
+    "genre":"Country",
+    "likes":71376,
+    "author":"Guadalupe Medhurst",
+    "explicit":false
+  },
+  {
+    "id":"868fb145-fd7b-407a-84f8-4455ed8ce8af",
+    "name":"et rerum et",
+    "genre":"Hip Hop",
+    "likes":42295,
+    "author":"Myra O'Reilly",
+    "explicit":true
+  },
+  {
+    "id":"d3a0868b-ba2e-408c-a163-aeb6aa58b6a4",
+    "name":"perferendis voluptatem possimus",
+    "genre":"World",
+    "likes":97754,
+    "author":"Velma Bosco",
+    "explicit":false
+  },
+  {
+    "id":"91328de1-a764-49da-9b7b-a611c0726c3e",
+    "name":"perspiciatis impedit quis",
+    "genre":"Pop",
+    "likes":51650,
+    "author":"Derek Ebert",
+    "explicit":false
+  },
+  {
+    "id":"952a9ffc-fe14-4c3e-afc0-e152da640ef6",
+    "name":"quod rerum excepturi",
+    "genre":"Folk",
+    "likes":18132,
+    "author":"Mandy Ritchie",
+    "explicit":false
+  },
+  {
+    "id":"3914b68b-fa48-40f0-b4b8-e96a15e8575e",
+    "name":"est aliquid ducimus",
+    "genre":"Classical",
+    "likes":71803,
+    "author":"Miss Betsy Stark",
+    "explicit":false
+  },
+  {
+    "id":"07764e9c-3092-441e-88e1-67c757b8b9f4",
+    "name":"sint perferendis commodi",
+    "genre":"Rap",
+    "likes":7922,
+    "author":"Jim Wisoky",
+    "explicit":true
+  },
+  {
+    "id":"62de7d95-8401-4103-aa52-3e8fd1ec209d",
+    "name":"exercitationem temporibus quibusdam",
+    "genre":"Hip Hop",
+    "likes":95433,
+    "author":"Damon Kuhlman",
+    "explicit":true
+  },
+  {
+    "id":"bfabaf31-a226-40c0-aa69-04e1be752d6f",
+    "name":"velit beatae itaque",
+    "genre":"Metal",
+    "likes":33,
+    "author":"Mrs. Bernice Schmitt",
+    "explicit":false
+  },
+  {
+    "id":"87dba282-892a-4197-9285-dcec67fdae04",
+    "name":"perferendis dicta dolor",
+    "genre":"Jazz",
+    "likes":31060,
+    "author":"Raul Brekke",
+    "explicit":false
+  },
+  {
+    "id":"8394f85c-5f3b-4a2c-aba0-0b331796f3f8",
+    "name":"laborum qui itaque",
+    "genre":"Electronic",
+    "likes":38824,
+    "author":"Valerie Feest",
+    "explicit":true
+  }
+]

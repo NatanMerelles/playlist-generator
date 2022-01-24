@@ -1,0 +1,23 @@
+{
+  "name": "playlist-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "NODE_ENV=test npx mocha -w --parallel test/**/*.test.js",
+    "seed": "node ./seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "faker": "^5.5.3",
+    "mocha": "^9.1.4",
+    "sinon": "^12.0.1"
+  },
+  "devDependencies": {
+    "@types/faker": "^6.6.9"
+  }
+}
